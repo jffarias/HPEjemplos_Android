@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="iesous.com.hpejemplos.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejemplos tomados de la pagina de HermosaProgramaciòn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:id="@+id/tvTitulo" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvTitulo">
+
+        <Button
+            android:text="Comunicar Intents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setIntent"
+            android:id="@+id/button" />
+        <Button
+            android:text="android-recyclerview-cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setIntent"
+            android:id="@+id/btn_recycler" />
+    </LinearLayout>
+</RelativeLayout>

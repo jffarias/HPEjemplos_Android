@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ejemplo_intent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="iesous.com.hpejemplos.MostrarIntent.EjemploIntent">
+
+    <TextView
+        android:text="Comunicar Actividades A Través De Intents En Android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:fontFamily="cursive"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="http://www.hermosaprogramacion.com/2014/09/desarrollo-android-intents/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView2"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:onClick="goTutorialWeb"
+        android:elevation="1dp"
+        android:textColor="?attr/colorControlNormal"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Mostrar Intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:onClick="startActivity2"
+        android:id="@+id/button2" />
+
+    <TextView
+        android:text="Respuesta de la actividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:id="@+id/textView4" />
+</RelativeLayout>

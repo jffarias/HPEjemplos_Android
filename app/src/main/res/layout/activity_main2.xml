@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="iesous.com.hpejemplos.MostrarIntent.Main2Activity">
+
+    <TextView
+        android:text="¿Cómo te sientes hoy?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView3" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/opiniones">
+
+        <RadioButton
+            android:text="No tan bien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:onClick="onRadioButtonClicked"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Excelente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:onClick="onRadioButtonClicked"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Espero tener suerte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:onClick="onRadioButtonClicked"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="twitter:Iesous_Flor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_author"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="goWeb"/>
+
+    <TextView
+        android:text="Cadena recibida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_title"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <Button
+        android:text="Cerrar intent Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+</RelativeLayout>
